@@ -1,0 +1,6 @@
+# MultiNet 中文命令（与 esp_mn_commands_add 顺序、command_id 一致）
+# 0 开灯  1 熄灯  2 闪烁  3 暗度调低一档
+开灯
+熄灯
+闪烁
+暗度调低一档

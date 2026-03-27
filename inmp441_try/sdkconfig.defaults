@@ -1,0 +1,12 @@
+# 分区与 Flash（模型分区需 ≥ movemodel.py 打印的 Recommended model partition size）
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
+
+# ESP-SR：与 managed_components 中 movemodel.py 打包逻辑一致（wn9s_hilexin + mn6_cn + fst）
+CONFIG_SR_WN_WN9S_HILEXIN=y
+CONFIG_SR_MN_CN_MULTINET6_QUANT=y
+CONFIG_MODEL_IN_FLASH=y
+
+# 可选：降低 AFE 日志或按板级调整
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192
